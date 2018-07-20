@@ -17,16 +17,19 @@
 
   	<dependencies>
 		<!-- Spring -->
-		
-		 <dependency> 
-		 <groupId>org.springframework</groupId> 
-		 <artifactId>spring-aop</artifactId> 
-		 <version>${spring.version}</version> </dependency> 
 		<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-aop</artifactId>
+	    <version>${spring.version}</version>
+		</dependency>
+
+		<dependency>		
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
@@ -47,11 +50,12 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.45</version>
-		</dependency>
+	 	  <dependency>   
+	  <groupId>mysql</groupId>   
+	       <artifactId>mysql-connector-java</artifactId>
+	       <version>8.0.11</version>
+	 </dependency>
+	 
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -60,6 +64,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
